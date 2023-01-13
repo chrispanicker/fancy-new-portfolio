@@ -1,0 +1,29 @@
+#home{
+	width: 100vw;
+}
+
+#home video{
+	width: 100vw;
+	height: auto;
+	z-index: -100;
+}
+
+#overlay{
+	position: absolute;
+	top:0;
+	background-color: rgba(0, 0, 0, .8);
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opacity .2s ease;
+}
+
+#overlay h2{
+	padding: 10vw;
+}
+
+.hide{
+	opacity: 0;
+}

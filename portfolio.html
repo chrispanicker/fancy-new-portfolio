@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chris's Full Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="mobile.css">
+	<link rel="stylesheet" type="text/css" href="portfolioMobile.css">
+	<script type="module" src="./js/dropdown.js"></script>	
+	<script type="module" src="./js/projects.js"></script>
+	<script type="module" src="./js/filter.js"></script>
+	<script type="module" src="./js/name.js"></script>
+	<script type="module" src="./js/blocks.js"></script>
+</head>
+<body class="hide">
+	<header id="header">
+			<span><h1 id="name"><a href="./index.html">Chris Panicker</a></h1></span>
+			<span id="medEl" class="dropdown desktopOnly"><div>Mediums</div></span>
+			<span id="themeEl" class="dropdown desktopOnly"><div>Themes</div></span>
+			<span id="yearEl" class="dropdown desktopOnly"><div>Years</div></span>
+			
+			<div id="filterDiv">
+				<span id="medMobileEl" class="dropdown mobileOnly"><div>Mediums</div></span>
+				<span id="themeMobileEl" class="dropdown mobileOnly"><div>Themes</div></span>
+				<span id="yearMobileEl" class="dropdown mobileOnly"><div>Years</div></span>
+			</div>
+	</header>
+
+	<section id="mainParent" class="main">
+		<div id="main">
+			<h1 id="filterTitle">Highlights</h1>
+			<div id="highlights">
+				<div id="blockGrandparent">
+					<div id=blockParent1>
+						<video autoplay controls loop muted id="image" src="./assets/videos/gd.mov"></video>
+					</div>
+					<div id=blockParent2>
+						<h2>Get That Fly! (2022)</h2>
+						<p>An animation where I used my arm as the canvas, swatting an obnoxious fly.</p>
+					</div>
+				</div>
+				<div id="blockGrandparent">
+					<div id=blockParent1>
+						<video autoplay controls loop muted id="image" src="./assets/videos/dilly.mp4"></video>
+					</div>
+					<div id=blockParent2>
+						<h2>Dilly Dally (2021)</h2>
+						<p>A simple gyroscope-based web game.</p>
+					</div>
+				</div>
+				<div id="blockGrandparent">
+					<div id=blockParent1>
+						<video autoplay controls loop muted id="image" src="./assets/videos/book.mp4"></video>
+					</div>
+					<div id=blockParent2>
+						<h2>Raphael's School of Skate (2022)</h2>
+						<p>A stop motion collage animation using an 18th century art book and Skate Jawn issue 69.</p>
+					</div>
+				</div>
+				<!-- ADD 3 MORE PROJECTS FOR NICE LITTLE GRID -->
+				<div id="blockGrandparent">
+					<div id=blockParent1>
+						<video autoplay controls loop muted id="image" src="./assets/videos/lmh.mov"></video>
+					</div>
+					<div id=blockParent2>
+						<h2>Losing My Head (2022)</h2>
+						<p>A short film I animated and scored with rotoscoped visuals.</p>
+					</div>
+				</div>
+				<div id="blockGrandparent">
+					<div id=blockParent1>
+						<video autoplay controls loop muted id="image" src="./assets/videos/eyes.mp4"></video>
+					</div>
+					<div id=blockParent2>
+						<h2>Eyes Like The Sky (2021)</h2>
+						<p>A mixed media animation, using a character I drew and scanned, and footage from King Gizzard and the Lizard Wizard's album Eyes Like the Sky.</p>
+					</div>
+				</div>
+				<div id="blockGrandparent">
+					<div id=blockParent1>
+						<video autoplay controls loop muted id="image" src="./assets/videos/direct.mov"></video>
+					</div>
+					<div id=blockParent2>
+						<h2>Direct Animation (2022)</h2>
+						<p>An exercise in patience. This animation was scratched into 8mm found film.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<span><p>hello@panicker.design</p></span>
+		<span><a href="https://www.instagram.com/chrispanicker/">@chrispanicker</a></span>
+	</footer>
+</body>
+</html>

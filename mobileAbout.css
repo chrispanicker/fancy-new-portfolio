@@ -1,0 +1,21 @@
+@media only screen and (max-width: 600px) {
+
+	#about h2{
+		font-size: 3vh;
+	}
+
+	#about h3{
+		font-size: 2.9vh;
+		padding-top: 2vh;
+		padding-bottom: .2vh;
+		margin: 0;
+	}
+
+	#about p{
+		font-size: 2.2vh;
+	}
+
+	#about video{
+		display: none;
+	}
+}
