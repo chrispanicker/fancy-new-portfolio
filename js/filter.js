@@ -46,7 +46,6 @@ function parseFilters(key, value){
 
 
 function createTitle(title){
-	console.log("appended")
 	let filterTitle = document.createElement("h2");
 	filterTitle.id = "filterTitle"
 	filterTitle.innerHTML = title
