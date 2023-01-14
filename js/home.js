@@ -8,7 +8,7 @@ instructionsMobile.id="instructionsMobile";
 instructions.classList.add("desktopOnly");
 instructionsMobile.classList.add("mobileOnly");
 instructions.innerHTML="Hey! Just click anywhere to change the background video here :)"
-instructionsMobile.innerHTML="Hey! Just tap anywhere to change the background video here :)"
+instructionsMobile.innerHTML="Hey! Just tap the video to change the background here :)"
 
 overlay.onclick = function(){
 	overlay.classList.add("hide")

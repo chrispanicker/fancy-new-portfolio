@@ -31,7 +31,7 @@ header{
   position: fixed;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.2), rgba(0,0,0,0.5), rgba(0,0,0,0.6), rgba(0,0,0,0.8), rgba(0,0,0,1));
+  background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
   padding: 0;
   width: 100vw;
   height: auto;
@@ -69,7 +69,6 @@ button{
 #image{
   width: auto;
   height: 14vh;
-  max-width: 50vw;
   z-index: -100;
   transition: height .5s ease;
   padding: .2vw;

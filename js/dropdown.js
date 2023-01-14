@@ -45,34 +45,30 @@ let yearMobileEl = document.querySelector("#yearMobileEl");
 let medMobileEl = document.querySelector("#medMobileEl");
 let themeMobileEl = document.querySelector("#themeMobileEl");
 
+yearMobileEl.onclick = function(){
+	yearMobileEl.classList.toggle("dropdown");
+	medMobileEl.classList.remove("dropdown");
+	themeMobileEl.classList.remove("dropdown");
+}
+medMobileEl.onclick = function(){
+	medMobileEl.classList.toggle("dropdown");
+	yearMobileEl.classList.remove("dropdown");
+	themeMobileEl.classList.remove("dropdown");
+}
+themeMobileEl.onclick = function(){
+	themeMobileEl.classList.toggle("dropdown");
+	medMobileEl.classList.remove("dropdown");
+	yearMobileEl.classList.remove("dropdown");
+
+}
+
 for(const [key, value] of Object.entries(filterTypes)){
 	if(key==="years"){
-		let dropParent = document.createElement("div");
-		let dropParentMobile = dropParent.cloneNode(true);
-		dropParent.classList.add("dropParent");
-		for(let i=0; i<value.length; i++){
-			dropParent.append(createDrop(key, value, i));
-			yearEl.append(dropParent);
-			yearMobileEl.append(dropParentMobile);
-		}
+		createDropParent(yearEl, yearMobileEl, key, value);
 	} else if(key==="mediums"){
-		let dropParent = document.createElement("div");
-		let dropParentMobile = dropParent.cloneNode(true);
-		dropParent.classList.add("dropParent");
-		for(let i=0; i<value.length; i++){
-			dropParent.append(createDrop(key, value, i));
-			medEl.append(dropParent);
-			medMobileEl.append(dropParentMobile);
-		}
+		createDropParent(medEl, medMobileEl, key, value);
 	} else if(key==="themes"){
-		let dropParent = document.createElement("div");
-		let dropParentMobile = dropParent.cloneNode(true);
-		dropParent.classList.add("dropParent");
-		for(let i=0; i<value.length; i++){
-			dropParent.append(createDrop(key, value, i));
-			themeEl.append(dropParent);
-			themeMobileEl.append(dropParentMobile);
-		}
+		createDropParent(themeEl, themeMobileEl, key, value);
 	}
 }
 
@@ -85,3 +81,21 @@ function createDrop(key, value, index){
 	drop.classList.add("dropdown-content");
 	return drop;
 }
+
+function createDropParent(el, mobileEl, key, value){
+	let dropParent = document.createElement("div");
+	let dropParentMobile = dropParent.cloneNode(true);
+	dropParent.classList.add("dropParent");
+	dropParentMobile.classList.add("dropParent")
+	for(let i=0; i<value.length; i++){
+		dropParent.append(createDrop(key, value, i));
+		dropParentMobile.append(createDrop(key, value, i));
+		el.append(dropParent);
+		mobileEl.append(dropParentMobile);
+	}
+}
+
+
+
+
+
