@@ -48,27 +48,30 @@ let themeMobileEl = document.querySelector("#themeMobileEl");
 for(const [key, value] of Object.entries(filterTypes)){
 	if(key==="years"){
 		let dropParent = document.createElement("div");
+		let dropParentMobile = dropParent.cloneNode(true);
 		dropParent.classList.add("dropParent");
 		for(let i=0; i<value.length; i++){
 			dropParent.append(createDrop(key, value, i));
 			yearEl.append(dropParent);
-			yearMobileEl.append(dropParent);
+			yearMobileEl.append(dropParentMobile);
 		}
 	} else if(key==="mediums"){
 		let dropParent = document.createElement("div");
+		let dropParentMobile = dropParent.cloneNode(true);
 		dropParent.classList.add("dropParent");
 		for(let i=0; i<value.length; i++){
 			dropParent.append(createDrop(key, value, i));
 			medEl.append(dropParent);
-			medMobileEl.append(dropParent);
+			medMobileEl.append(dropParentMobile);
 		}
 	} else if(key==="themes"){
 		let dropParent = document.createElement("div");
+		let dropParentMobile = dropParent.cloneNode(true);
 		dropParent.classList.add("dropParent");
 		for(let i=0; i<value.length; i++){
 			dropParent.append(createDrop(key, value, i));
 			themeEl.append(dropParent);
-			themeMobileEl.append(dropParent);
+			themeMobileEl.append(dropParentMobile);
 		}
 	}
 }

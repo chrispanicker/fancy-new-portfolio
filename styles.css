@@ -118,7 +118,7 @@ button{
 
 #blockGrandparent:hover img{
   width: auto;
-  height: 28vh;
+  height: 40vh;
 }
 
 #blockGrandparent:hover video{
@@ -148,7 +148,11 @@ button{
   z-index: 100;
 }
 
-#header a:hover{
+#name{
+  text-align: center;
+}
+
+#header .hoverMe:hover{
   opacity: 50% ;
 }
 

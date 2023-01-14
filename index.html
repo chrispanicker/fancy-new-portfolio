@@ -9,16 +9,17 @@
 	<link rel="stylesheet" type="text/css" href="mobile.css">
 	<script type="module" src="./js/video.js"></script>
 	<script type="module" src="./js/home.js"></script>
+	<script type="module" src="./js/name.js"></script>
 </head>
 <body id="body">
 	<header id="header">
-			<span><h1 id="name"><a href="./index.html">Chris Panicker</a></h1></span>
-			<span class="dropdown"><a href="./portfolio.html">Portfolio</a></span>
-			<span class="dropdown"><a href="./about.html">About</a></span>
+			<span><h1><a href="./index.html" id="name">Chris Panicker</a></h1></span>
+			<span class="dropdown"><a href="./portfolio.html" class="hoverMe">Portfolio</a></span>
+			<span class="dropdown"><a href="./about.html" class="hoverMe">About</a></span>
 	</header>
 	<section id="mainParent" class="main">
 		<div id="home">
-			<video muted loop autoplay src="./assets/videos/book.mp4" id="fullscreenVid"></video>
+			<video muted loop autoplay playsinline src="./assets/videos/book.mp4" id="fullscreenVid"></video>
 		</div>
 	</section>
 	<footer>

@@ -43,6 +43,6 @@ export function createVid(){
 	vid.controls = true;
 	vid.loop = true;
 	vid.muted = true;
-
+	vid.playsinline = true;
 	return vid;
 }
