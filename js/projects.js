@@ -103,7 +103,7 @@ let wikibook = {
 
 let dilly = {
 	title: "Dilly Dally (2021)",
-	desc: "A time-killing gyroscope-based web minigame.." ,
+	desc: "A time-killing gyroscope-based web minigame." ,
 	filters: {year: "2021", medium: ["code"], theme: ["experiment"]},
 	src: ["./assets/videos/dilly.mp4"]
 }
